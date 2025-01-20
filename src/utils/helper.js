@@ -1,21 +1,21 @@
 export const CARDS = [
     {
         title: "home",
-        link: "about",
+        link: "/",
 
     },
     {
         title: "about",
-        link: "about",
+        link: "/about",
 
     },
     {
         title: "help",
-        link: "about",
+        link: "/help",
 
     }, {
         title: "ram",
-        link: "about",
+        link: "/ram",
 
     }
 ]

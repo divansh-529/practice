@@ -15,11 +15,12 @@ const Header = () => {
                     <h2 className="cursor-pointer text-white text-2xl">logo</h2>
                     <ul className={`flex gap-4 max-md:absolute max-md:flex-col justify-center max-md:items-center max-md:w-screen transition-all ease-in-out duration-500 transit max-md:bg-black top-0 left-0  max-md:min-h-screen ${nav ? "max-md:-translate-y-0" : "max-md:-translate-y-full"}`}>
                         {CARDS.map((obj, index) => (
-                            <li className=' cursor-pointer text-white' key={index}>{obj.title}</li>
+
+                            <li onClick={handleclick} key={index}> <a className='text-white' href={obj.link}>{obj.title}</a > </li>
                         ))
                         }
                         < li >
-                            <button className='md:hidden'>
+                            <button onClick={handleclick} className='md:hidden'>
                                 <p className="cursor-pointer text-white">contact-us</p>
                             </button>
                         </li>
@@ -38,6 +39,7 @@ const Header = () => {
                                 <path d="M8 12.5088H24M8 19.4913H24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>}
                     </button>
+
 
                 </div>
             </div >
